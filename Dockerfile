@@ -9,3 +9,5 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update && apt-get install --no-install-recommends -y mongodb-mongosh \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+CMD ["sleep", "infinity"]
